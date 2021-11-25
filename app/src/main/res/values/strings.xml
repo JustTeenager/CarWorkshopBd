@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CarWorkshopBd</string>
+    <string name="tables_menu_title">Список доступных таблиц</string>
+    <string name="title_label">Заголовок:</string>
+    <string name="description_label">Описание:</string>
+    <string name="code_label">Код:</string>
+    <string name="auth">Авторизация</string>
+    <string name="password">Пароль</string>
+    <string name="enter_auth">Авторизоваться</string>
+    <string name="error_password">Вы ввели неверный пароль</string>
+    <string name="invalid_item">Ошибка валидации! Проверьте введеные данные</string>
+    <string name="create_btn_title">Создать</string>
+    <string name="choose_pair_title">Выберите соответствующие сущности</string>
+
+    <string-array name="typeAuth">
+        <item>Менеджер</item>
+        <item>Директор</item>
+    </string-array>
+</resources>

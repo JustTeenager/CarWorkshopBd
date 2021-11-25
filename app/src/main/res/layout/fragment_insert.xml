@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="@string/tables_menu_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="первый текст"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/etSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="второй текст"
+                app:layout_constraintTop_toBottomOf="@id/etFirst"
+                app:layout_constraintStart_toStartOf="@id/etFirst"
+                app:layout_constraintEnd_toEndOf="@id/etFirst" />
+
+            <EditText
+                android:id="@+id/etThird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="третий текст"
+                app:layout_constraintTop_toBottomOf="@id/etSecond"
+                app:layout_constraintStart_toStartOf="@id/etSecond"
+                app:layout_constraintEnd_toEndOf="@id/etSecond" />
+
+            <EditText
+                android:id="@+id/etFourth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="четвертый текст"
+                app:layout_constraintTop_toBottomOf="@id/etThird"
+                app:layout_constraintStart_toStartOf="@id/etThird"
+                app:layout_constraintEnd_toEndOf="@id/etThird" />
+
+            <EditText
+                android:id="@+id/etFifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="пятый текст"
+                app:layout_constraintTop_toBottomOf="@id/etFourth"
+                app:layout_constraintStart_toStartOf="@id/etFourth"
+                app:layout_constraintEnd_toEndOf="@id/etFourth" />
+
+            <EditText
+                android:id="@+id/etSixth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                tools:text="шестой текст"
+                app:layout_constraintTop_toBottomOf="@id/etFifth"
+                app:layout_constraintStart_toStartOf="@id/etFifth"
+                app:layout_constraintEnd_toEndOf="@id/etFifth" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:text="@string/create_btn_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:padding="16dp"
+                app:layout_constraintTop_toBottomOf="@id/etSixth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
